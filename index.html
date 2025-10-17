@@ -306,7 +306,7 @@ setTimeout(()=>{
   const id=document.getElementById('tiktokId').value.trim();
   totalCoins-=selectedPackage.amount;
   updateTotalsUI();
-  successText.innerHTML=`You sent <b>${selectedPackage.amount.toLocaleString()}</b> coins ($${usdFormat(selectedPackage.price)}) to <b>${id}</b> via <b>${selectedMethod}</b>. \nThis operation has been completed. It will be processed within 24 hours!`;
+  successText.innerHTML=`You sent <b>${selectedPackage.amount.toLocaleString()}</b> coins ($${usdFormat(selectedPackage.price)}) to Tiktok ID @<b>${id}</b> via <b>${selectedMethod}</b>. \nThis operation has been completed. It will be processed within 24 hours!`;
   successOverlay.classList.add('show');
   processing=false;
 },2000);
@@ -324,3 +324,4 @@ backBtn.onclick=()=>{
 </script>
 </body>
 </html>
+
